@@ -2,6 +2,12 @@
 {
     width: 100%;
     color: white;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.tablaCV td {
+    border: red solid 1px;
 }
 
 .tablaCV img {
