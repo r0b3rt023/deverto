@@ -45,16 +45,9 @@
     color: var(--txt);
 }
 
-/*
-.tablaCV td {
-    border: solid 2px red;
-}
-*/
-
 .tablaExperiencia
 {
     width: 100%;
-    
     color: white;
 }
 

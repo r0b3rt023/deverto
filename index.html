@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styleNavigator.css">
     <link rel="stylesheet" type="text/css" href="styleApartados.css">
     <link rel="stylesheet" type="text/css" href="stylePerfil.css">
+    <link rel="stylesheet" type="text/css" href="styleGitHub.css">
 </head>
 
 <body>
@@ -16,6 +17,14 @@
      <!--Menu de navegacion-->
      <div class="navigation">
         <ul>
+            <li class="list perfil">
+                <a>
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
             <li class="list home">
                 <a>
                     <span class="icon">
@@ -24,15 +33,7 @@
                     <span class="text">Home</span>
                 </a>
             </li>
-            <li class="list perfil active">
-                <a>
-                    <span class="icon">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </span>
-                    <span class="text">Profile</span>
-                </a>
-            </li>
-            <li class="list github">
+            <li class="list github active">
                 <a>
                     <span class="icon">
                         <ion-icon name="logo-github"></ion-icon>
@@ -53,7 +54,7 @@
         </div>
     </div>
 
-    <div class="apartado" id="perfil">
+    <div class="apartado ocultado" id="perfil">
         <div class="contenidoApartado">
             <table class="tablaCV">
                 <tr>
@@ -90,14 +91,6 @@
                             <li>
                                 <h4>CONTACTO</h4>
                                 <ul>
-                                    <li>
-                                        <ion-icon name="location-outline"></ion-icon>
-                                        C/ Carbonero Nº8 5ºA, Valladolid (47011)
-                                    </li>
-                                    <li>
-                                        <ion-icon name="call-outline"></ion-icon>
-                                        615328211
-                                    </li>
                                     <li>
                                         <ion-icon name="mail-outline"></ion-icon>
                                         roobeerto23@gmail.com
@@ -155,7 +148,7 @@
                                         <br>
                                         <li>
                                             <h3>Técnico Superior en Administracion de Sistemas Informaticos y Redes</h3>
-                                            <p>CPrFP Gregorio Fernández (09/2016 - 06/2018)</p>
+                                            <p>IES Galileo (09/2016 - 06/2018)</p>
                                         </li>
                                     </ul>
                                 </td>
@@ -166,14 +159,42 @@
             </table>
         </div>
     </div>
-
-    <div class="apartado ocultado" id="github">
-        <h1 style="color: azure;">Git Hub</h1>
-        <div class="contenidoApartado" style="text-align: center;">
-            <h2>
-                En desarrollo
-            </h2>
-        </div>
+    <div class="apartado" id="github">
+        <div class="contenidoApartado">
+            <table class="tablaGitHub">
+                <tr>
+                    <td colspan="2" style="align-content: center;vertical-align: middle;
+                    text-align: center;">
+                        <h1 style="color: azure;">GitHub</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://github.com/r0b3rt023/Multiply">
+                            <img src="logoMultply.png" width="25%"/>
+                        </a>
+                        <h2>MULTIPLY</h2>
+                        <p>Un pequeño juego sobre multiplicaciones, orientado a niños o personas mayores, el cual les ayuda a mejorar la agilidad mental y también el manejo con los ordenadores.</p>
+                    </td>
+                    <td>
+                        <a href="https://github.com/r0b3rt023/SCCyL">
+                            <img src="logoSCCyL.png" width="25%"/>
+                        </a>
+                        <h2>SCCyL</h2>
+                        <p>Una pagina desarrollada en Spring con PrimeFaces donde se muestran datos sobre la COVID-19</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="https://github.com/r0b3rt023/CalcularTonalidadPartitura">
+                            <img src="logoUnkwon.png" width="15%"/>
+                        </a>
+                        <h2>Calcular Tonalidad Partitura</h2>
+                        <p>(En desarrollo)</p>
+                        <p>Aplicación Android que permite calcular la tonalidad de una partitura</p>
+                    </td>
+                </tr>
+            </table>
     </div>
     
     <script>
@@ -209,7 +230,6 @@
         list.forEach((item) =>
             item.addEventListener('click', activeLink));
     </script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

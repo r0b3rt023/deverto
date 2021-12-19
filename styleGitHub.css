@@ -1,0 +1,36 @@
+.tablaGitHub {
+    width: 100%;
+    vertical-align: middle;
+    align-self: center;
+    color: white;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.tablaGitHub td {
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tablaGitHub h2 {
+    color: var(--txt);
+}
+
+.tablaGitHub tr:nth-child(2) > td {
+    width: 50%;
+    vertical-align: top;
+}
+
+.tablaGitHub > td {
+    vertical-align: top;
+}
+
+.tablaGitHub img {
+    padding-top: 20px;
+}
+
+.tablaGitHub p {
+    padding-left: 50px;
+    padding-right: 50px;
+}

@@ -6,8 +6,9 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    margin-top: 85px;
+    padding-top: 85px;
     vertical-align: middle;
+    margin: auto;
 }
 
 .apartado h1 {
@@ -17,6 +18,11 @@
 .apartado .contenidoApartado {
     text-align: justify;
     color: white;
+    width: 100%;
+}
+
+.contenidoApartado {
+    text-align: center;
 }
 
 .ocultado {
