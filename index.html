@@ -1,4 +1,5 @@
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,32 +7,158 @@
     <title>Roberto Esteban Sinovas</title>
     <link rel="stylesheet" type="text/css" href="styleGenerales.css">
     <link rel="stylesheet" type="text/css" href="styleNavigator.css">
+    <link rel="stylesheet" type="text/css" href="styleApartados.css">
+    <link rel="stylesheet" type="text/css" href="stylePerfil.css">
 </head>
+
 <body>
-    <div>
-        <h1 style="color: azure;">Página en desarrollo</h1>
+    <div class="apartado ocultado" id="home">
+        <h1 style="color: azure;">Home</h1>
+        <div class="contenidoApartado" style="text-align: center;">
+            <h2>
+                En desarrollo
+            </h2>
+        </div>
+    </div>
+
+    <div class="apartado" id="perfil">
+        <h1 style="color: azure;">Perfil</h1>
+        <div class="contenidoApartado">
+            <table class="tablaCV">
+                <tr>
+                    <td class="celdaFoto">
+                        <img src="./fotoPerfil.png"/>
+                        <h3>Roberto Esteban Sinovas</h3>
+                    </td>
+                    <td class="celdaDescripcion">
+                        <div>
+                            Actualmente soy estudiante de 2º curso de Desarrollo de Aplicaciones
+                            Multiplataforma, y cuento con experiencia previa en el sector por haber trabajado
+                            un año como programador web (Full Stack). Además, me gusta dedicar mi tiempo a
+                            aprender de forma autodidacta nuevos lenguajes.<br>
+                            Dada mi anterior experiencia laboral y mis estudios, he aprendido a trabajar en
+                            equipo, además de otras capacidades, como resolutividad o adaptación rápida a
+                            los cambios. Todo esto me ha ayudado a mejorar mi agilidad al programar, por lo
+                            que considero que podría ser un buen aporte para una empresa del sector.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="celdaDatos">
+                        <ul>
+                            <li>
+                                <p>Nacimiento: 23/03/1998</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h4>CONTACTO</h4>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="location-outline"></ion-icon>
+                                        C/ Carbonero Nº8 5ºA, Valladolid (47011)
+                                    </li>
+                                    <li>
+                                        <ion-icon name="call-outline"></ion-icon>
+                                        615328211
+                                    </li>
+                                    <li>
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        roobeerto23@gmail.com
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <td style="width: 100%;">
+                        <table class="tablaExperiencia">
+                            <tr>
+                                <td>
+                                    <h2>EXPERIENCIA EN EL SECTOR</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Programador Junior</h3>
+                                            <p>ATOS Iberia (11/2018 - 11/2019)</p>
+                                            <ul>
+                                                <li>Creación de una apliación Spring con Hibernate y PrimeFaces, donde
+                                                    se permitía ver, editar, buscar y expotar a excel datos de una BD (FullStack)
+                                                </li>
+                                                <li>Creación de scripts UNIX para automatizar ciertos procesos de
+                                                    comprobación previa a instalación de software Middleware</li>
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <h3>Prácticas como Técnico Informatico en el departamento de Soporte</h3>
+                                            <p>Acción Laboral (03/2018 - 06/2018)</p>
+                                            <ul>
+                                                <li>Preparación/Mantenimiento de equipos informaticos</li>
+                                                <li>Resolución de incidencias</li>
+                                                <li>Instalación de equipos informaticos y configuracion de routers en
+                                                    oficinas</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100%;">
+                        <table class="tablaExperiencia">
+                            <tr>
+                                <td style="width: 100%;">
+                                    <h2>ESTUDIOS</h2>
+                                    <ul>
+                                        <li>
+                                            <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+                                            <p>CPrFP Gregorio Fernández (09/2020 - Actualidad)</p>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <h3>Técnico Superior en Administracion de Sistemas Informaticos y Redes</h3>
+                                            <p>CPrFP Gregorio Fernández (09/2016 - 06/2018)</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="apartado ocultado" id="github">
+        <h1 style="color: azure;">Git Hub</h1>
+        <div class="contenidoApartado" style="text-align: center;">
+            <h2>
+                En desarrollo
+            </h2>
+        </div>
     </div>
     <!--Menu de navegacion-->
     <div class="navigation">
         <ul>
-            <li class="list active">
-                <a href="#">
+            <li class="list home">
+                <a>
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
                     <span class="text">Home</span>
                 </a>
             </li>
-            <li class="list">
-                <a href="#">
+            <li class="list perfil active">
+                <a>
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </span>
                     <span class="text">Profile</span>
                 </a>
             </li>
-            <li class="list">
-                <a href="#">
+            <li class="list github">
+                <a>
                     <span class="icon">
                         <ion-icon name="logo-github"></ion-icon>
                     </span>
@@ -41,19 +168,42 @@
             <div class="indicator"></div>
         </ul>
     </div>
-
     <script>
-        const lista = document.querySelectorAll('.list');
+        const list = document.querySelectorAll('.list');
         function activeLink() {
-            lista.forEach((item) =>
-            item.classList.remove('active'));
+            ocultarDivs();
+            list.forEach((item) =>
+                item.classList.remove('active'));
             this.classList.add('active');
+
+            this.classList.forEach((nombreClase) => {
+                if (nombreClase == "home") {
+                    var home = document.getElementById("home");
+                    home.classList.remove("ocultado");
+                } else if (nombreClase == "perfil") {
+                    var home = document.getElementById("perfil");
+                    home.classList.remove("ocultado");
+                } else if (nombreClase == "github") {
+                    var home = document.getElementById("github");
+                    home.classList.remove("ocultado");
+                }
+            });
         }
-        lista.forEach((item) =>
-        item.addEventListener('click',activeLink));
+        function ocultarDivs() {
+            var home = document.getElementById("home");
+            home.classList.add("ocultado");
+            var perfil = document.getElementById("perfil");
+            perfil.classList.add("ocultado");
+            var github = document.getElementById("github");
+            github.classList.add("ocultado");
+        }
+
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

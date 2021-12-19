@@ -11,14 +11,14 @@
 :root 
 {
     --clr: #222327;
+    --txt: #FFBB33;
 }
 
 body 
 {
-    display: flex;
+
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: var(--clr);
 }
-

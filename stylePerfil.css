@@ -1,0 +1,72 @@
+.tablaCV
+{
+    width: 100%;
+    color: white;
+}
+
+.tablaCV img {
+    width:200px;
+    border: 3px solid var(--txt);
+    border-radius: 50%;
+}
+
+.celdaFoto {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.celdaDescripcion {
+    text-align: justify;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.celdaDatos {
+    padding-top: 20px;
+    vertical-align: top;
+}
+
+.celdaDatos > ul {
+    list-style: none;
+}
+
+.celdaDatos > ul  ul > li {
+    padding-top: 15px;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.celdaDatos ion-icon {
+    color: var(--txt);
+}
+
+/*
+.tablaCV td {
+    border: solid 2px red;
+}
+*/
+
+.tablaExperiencia
+{
+    width: 100%;
+    
+    color: white;
+}
+
+.tablaExperiencia tr td h2 {
+    color: var(--txt);
+}
+
+.tablaExperiencia tr td ul {
+    margin-left: 20px;
+    list-style: square;
+    text-align: justify;
+}
+
+.tablaExperiencia tr td > ul {
+    margin-left: 20px;
+    list-style: none;
+}
