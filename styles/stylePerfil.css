@@ -1,0 +1,94 @@
+.div-cv {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5%;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-data ul {
+    list-style: none;
+}
+
+.personal-data ion-icon {
+    color: var(--icons-color);
+}
+
+.personal-data img {
+    width:200px;
+    border: 3px solid var(--txt);
+    border-radius: 50%;
+}
+
+.info-div, .contact-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-div {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .div-cv {
+        grid-template-columns: auto;
+    }
+
+    .personal-data {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .experience-data {
+        text-align: start;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .div-cv {
+        grid-template-columns: auto;
+    }
+
+    .personal-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.career-data {
+    text-align: justify;
+}
+
+.experience-data h2 {
+    color: var(--txt);
+}
+
+.experience-data h3 {
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+.experience-data > ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.experience-data > ul > li > ul  li {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.experience-data > ul > li > ul  li::marker {
+    color: var(--icons-color);
+}
