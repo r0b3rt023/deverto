@@ -3,14 +3,14 @@
     flex-direction: row;
 }
 
-.prueba {
+/* .prueba {
     background-color: var(--icons-color);
     width: 50%;
     height: 100%;
     background-image: url("../img/bg-roberto.jpg");
     background-size: cover;
     opacity: 0.6;
-}
+} */
 
 .home-data {
     display: grid;
@@ -22,8 +22,8 @@
     padding-right: 5%;
     text-align: justify;
     text-align-last: center;
-    /* width: 50%; */
-    height: 100%;
+    /* width: 50%;
+    height: 100%; */
     /* box-shadow: 40px 0 5px -2px black; */
 }
 
@@ -62,4 +62,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .home-data p {
+        font-size: 2.5em;
+    }
 }
