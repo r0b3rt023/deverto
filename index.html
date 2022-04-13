@@ -12,8 +12,11 @@
     <link rel="stylesheet" type="text/css" href="./styles/styleHome.css">
     <link rel="stylesheet" type="text/css" href="./styles/stylePerfil.css">
     <link rel="stylesheet" type="text/css" href="./styles/styleGitHub.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styleContacto.css">
 
     <script src="./scripts/navigation-script.js" defer></script>
+    <script src="./scripts/send-message.js" defer></script>
+    <script src="./scripts/validate-form.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -21,6 +24,14 @@
 <body>
     <div class="navigation">
         <ul>
+            <li class="list-item home">
+                <a>
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
             <li class="list-item perfil active">
                 <a>
                     <span class="icon">
@@ -29,12 +40,12 @@
                     <span class="text">Perfil</span>
                 </a>
             </li>
-            <li class="list-item home">
+            <li class="list-item contacto">
                 <a>
                     <span class="icon">
-                        <ion-icon name="home-outline"></ion-icon>
+                        <ion-icon name="mail-outline"></ion-icon>
                     </span>
-                    <span class="text">Home</span>
+                    <span class="text">Contacto</span>
                 </a>
             </li>
             <li class="list-item github">
@@ -52,7 +63,7 @@
     <div class="main-div">
 
         <div class="apartado hidden" id="home">
-            <h1 style="color: azure;">Home</h1>
+            <h1>Home</h1>
             <h2>
                 (En desarrollo)
             </h2>
@@ -63,7 +74,7 @@
         </div>
 
         <div class="apartado" id="perfil">
-            <h1 style="color: azure;">Perfil</h1>
+            <h1>Perfil</h1>
             <div class="div-cv">
                 <div class="personal-data">
                     <div class="info-div">
@@ -146,8 +157,48 @@
             </div>
         </div>
 
+        <div class="apartado hidden" id="contacto">
+            <h1>Contacto</h1>
+            <h3 id="correo-correcto" class="hidden">Correo enviado correctamente</h3>
+            <h3 id="correo-error" class="hidden">Ha habido un problema al mandar el mensaje</h3>
+            <form id="form-contacto">
+                <div class="div-contacto">
+                    <div>
+                        <label>Nombre de la persona o compañia (*)</label>
+                        <input type="text" id="nombre-contacto" name="nombreContacto" />
+                    </div>
+                    <div>
+                        <label>Apellidos</label>
+                        <input type="text" id="apellidos-contacto" name="apellidosContacto" />
+                    </div>
+                    <div>
+                        <label>Teléfono (*)</label>
+                        <input type="number" id="telofono-contacto" name="telofonoContacto" />
+                    </div>
+                    <div>
+                        <label>Email (*)</label>
+                        <input type="email" id="email-contacto" name="emailContacto" />
+                    </div>
+                    <div>
+                        <label>Mensaje (*)</label>
+                        <textarea id="mensaje-contacto" name="mensajeContacto"></textarea>
+                    </div>
+                    <div>
+                        <span>(*) Los campos son obligatorios</span>
+                        <input type="submit" id="boton-enviar" value="Enviar"/>
+                    </div>
+                </div>
+            </form>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('_joNr1CPWbvdIc_lu')
+            </script>
+        </div>
+
         <div class="apartado hidden" id="github">
-            <h1 style="color: azure;">GitHub</h1>
+            <h1>GitHub</h1>
             <div class="div-repos">
                 <div>
                     <a href="https://github.com/r0b3rt023/Multiply">
