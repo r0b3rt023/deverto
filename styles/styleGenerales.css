@@ -41,3 +41,9 @@ body {
     background: var(--clr);
     /* background-image: url("../img/bg-home.jpg"); */
 }
+
+.home-view {
+    height: 100%;
+    padding-bottom: 0px;
+    padding-top: 70px;
+}

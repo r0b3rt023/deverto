@@ -1,9 +1,9 @@
 .div-repos {
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: start;
     column-gap: 5%;
     row-gap: 5%;
-    margin-top: 10px;
     padding-left: 5%;
     padding-right: 5%;
     text-align: justify;

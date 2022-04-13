@@ -1,6 +1,6 @@
 const botonEnviar = document.getElementById('boton-enviar');
 const nombre = document.getElementById("nombre-contacto");
-const telefono = document.getElementById("telofono-contacto");
+const telefono = document.getElementById("telefono-contacto");
 const email = document.getElementById("email-contacto");
 const mensaje = document.getElementById("mensaje-contacto");
 
@@ -13,6 +13,7 @@ document.getElementById('form-contacto').addEventListener('submit', function(eve
     event.preventDefault();
 
     removeOutline();
+
     mensajeError.classList.add(hiddenClass);
     mensajeCorrecto.classList.add(hiddenClass);
 
@@ -54,7 +55,6 @@ function validateForm() {
         mensaje.classList.add(fieldsEmpty);
         isComplete = false;
     }
-    console.log("VALIDADO");
     return isComplete;
 }
 
@@ -63,4 +63,11 @@ function removeOutline() {
     telefono.classList.remove(fieldsEmpty);
     email.classList.remove(fieldsEmpty);
     mensaje.classList.remove(fieldsEmpty);
+}
+
+function resetContactForm() {
+    removeOutline();
+    mensajeError.classList.add(hiddenClass);
+    mensajeCorrecto.classList.add(hiddenClass);
+
 }

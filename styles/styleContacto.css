@@ -40,7 +40,7 @@
     border-radius: 3px;
 }
 
-.div-contacto div:last-child > span {
+.div-contacto  span {
     font-size: .8em;
 }
 
@@ -53,13 +53,13 @@
     cursor: pointer;
 }
 
-#telofono-contacto::-webkit-outer-spin-button,
-#telofono-contacto::-webkit-inner-spin-button {
+#telefono-contacto::-webkit-outer-spin-button,
+#telefono-contacto::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-#telofonoContacto[type=number] {
+#telefono-contacto[type=number] {
     -moz-appearance: textfield;
 }
 

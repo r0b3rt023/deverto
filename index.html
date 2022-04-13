@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fav-icon.svg" type="image/x-icon">
     <title>Roberto Esteban Sinovas</title>
 
     <link rel="stylesheet" type="text/css" href="./styles/styleGenerales.css">
@@ -24,7 +25,7 @@
 <body>
     <div class="navigation">
         <ul>
-            <li class="list-item home">
+            <li class="list-item home active">
                 <a>
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
@@ -32,7 +33,7 @@
                     <span class="text">Home</span>
                 </a>
             </li>
-            <li class="list-item perfil active">
+            <li class="list-item perfil">
                 <a>
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
@@ -60,20 +61,18 @@
         </ul>
     </div>
 
-    <div class="main-div">
+    <div class="main-div" id="main-div">
 
-        <div class="apartado hidden" id="home">
-            <h1>Home</h1>
-            <h2>
-                (En desarrollo)
-            </h2>
+        <div class="apartado" id="home">
             <div class="home-data">
-                <p>Mi nombre es Roberto (Programador Junior) y esta es mi página realizada con HTML, CSS y JS.</p>
+                <p>Soy Roberto
+                    <br><span>(Programador Junior)</span>
+                    <br><a href="https://github.com/r0b3rt023" target="_blank"><button><ion-icon name="logo-github"></ion-icon>GitHub</button></a></span>
+                </p>
             </div>
-
         </div>
 
-        <div class="apartado" id="perfil">
+        <div class="apartado hidden" id="perfil">
             <h1>Perfil</h1>
             <div class="div-cv">
                 <div class="personal-data">
@@ -90,8 +89,10 @@
                             roobeerto23@gmail.com
                         </p>
                         <p>
-                            <ion-icon name="logo-github"></ion-icon>
-                            https://github.com/r0b3rt023
+                            <a href="https://github.com/r0b3rt023" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                https://github.com/r0b3rt023
+                            </a>
                         </p>
                     </div>
 
@@ -112,6 +113,15 @@
                     <div class="experience-data">
                         <h2>EXPERIENCIA EN EL SECTOR</h2>
                         <ul>
+                            <li>
+                                <h3>Practicas Programador Junior</h3>
+                                <p>SERBATIC (03/2022 - Actualidad)</p>
+                                <ul>
+                                    <li>Programación en HTML, CSS y JS
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
                             <li>
                                 <h3>Programador Junior</h3>
                                 <p>ATOS Iberia (11/2018 - 11/2019)</p>
@@ -161,10 +171,10 @@
             <h1>Contacto</h1>
             <h3 id="correo-correcto" class="hidden">Correo enviado correctamente</h3>
             <h3 id="correo-error" class="hidden">Ha habido un problema al mandar el mensaje</h3>
-            <form id="form-contacto">
+            <form id="form-contacto" method="POST">
                 <div class="div-contacto">
                     <div>
-                        <label>Nombre de la persona o compañia (*)</label>
+                        <label>Nombre de la persona o compañia <span>(*)</span></label>
                         <input type="text" id="nombre-contacto" name="nombreContacto" />
                     </div>
                     <div>
@@ -172,20 +182,20 @@
                         <input type="text" id="apellidos-contacto" name="apellidosContacto" />
                     </div>
                     <div>
-                        <label>Teléfono (*)</label>
-                        <input type="number" id="telofono-contacto" name="telofonoContacto" />
+                        <label>Teléfono <span>(*)</span></label>
+                        <input type="number" id="telefono-contacto" name="telefonoContacto" />
                     </div>
                     <div>
-                        <label>Email (*)</label>
+                        <label>Email <span>(*)</span></label>
                         <input type="email" id="email-contacto" name="emailContacto" />
                     </div>
                     <div>
-                        <label>Mensaje (*)</label>
+                        <label>Mensaje <span>(*)</span></label>
                         <textarea id="mensaje-contacto" name="mensajeContacto"></textarea>
                     </div>
                     <div>
                         <span>(*) Los campos son obligatorios</span>
-                        <input type="submit" id="boton-enviar" value="Enviar"/>
+                        <input type="submit" id="boton-enviar" value="Enviar" />
                     </div>
                 </div>
             </form>
