@@ -87,6 +87,16 @@
 
 @media screen and (max-width: 800px) {
     .div-contacto input, textarea {
+        width: 500px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .div-contacto input, textarea {
         width: 95%;
+    }
+    
+    .div-contacto label {
+        text-align: center;
     }
 }
