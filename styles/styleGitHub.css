@@ -32,9 +32,13 @@
     align-items: center;
 }
 
-.div-repos div:last-child {
-    grid-column: span 2;
+#img-calculadora {
+    width: 43%;
 }
+
+/* .div-repos div:last-child {
+    grid-column: span 2;
+} */
 
 @media screen and (max-width: 800px) {
     .div-repos {
