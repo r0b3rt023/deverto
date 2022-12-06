@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fav-icon.svg" type="image/x-icon">
     <title>Roberto Esteban Sinovas</title>
-    <link rel="stylesheet" type="text/css" href="styleGenerales.css">
-    <link rel="stylesheet" type="text/css" href="styleNavigator.css">
-    <link rel="stylesheet" type="text/css" href="styleApartados.css">
-    <link rel="stylesheet" type="text/css" href="stylePerfil.css">
-    <link rel="stylesheet" type="text/css" href="styleGitHub.css">
+
+    <link rel="stylesheet" type="text/css" href="./styles/styleGenerales.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styleNavigator.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styleApartados.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styleHome.css">
+    <link rel="stylesheet" type="text/css" href="./styles/stylePerfil.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styleGitHub.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styleContacto.css">
+
+    <script src="./scripts/navigation-script.js" defer></script>
+    <script src="./scripts/send-message.js" defer></script>
+    <script src="./scripts/validate-form.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-
-     <!--Menu de navegacion-->
-     <div class="navigation">
+    <div class="navigation">
         <ul>
-            <li class="list perfil active">
-                <a>
-                    <span class="icon">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </span>
-                    <span class="text">Profile</span>
-                </a>
-            </li>
-            <li class="list home">
+            <li class="list-item home active">
                 <a>
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
@@ -33,7 +33,23 @@
                     <span class="text">Home</span>
                 </a>
             </li>
-            <li class="list github">
+            <li class="list-item perfil">
+                <a>
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Perfil</span>
+                </a>
+            </li>
+            <li class="list-item contacto">
+                <a>
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contacto</span>
+                </a>
+            </li>
+            <li class="list-item github">
                 <a>
                     <span class="icon">
                         <ion-icon name="logo-github"></ion-icon>
@@ -45,193 +61,194 @@
         </ul>
     </div>
 
-    <div class="apartado ocultado" id="home">
-        <h1 style="color: azure;">Home</h1>
-        <div class="contenidoApartado" style="text-align: center;">
-            <h2>
-                En desarrollo
-            </h2>
-        </div>
-    </div>
+    <div class="main-div" id="main-div">
 
-    <div class="apartado" id="perfil">
-        <div class="contenidoApartado">
-            <table class="tablaCV">
-                <tr>
-                    <td colspan="2" style="align-content: center;vertical-align: middle;
-                    text-align: center;">
-                        <h1 style="color: azure;">Perfil</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="celdaFoto">
-                        <img src="./fotoPerfil.png"/>
+        <div class="apartado" id="home">
+            <div class="home-data">
+                <p>Soy Roberto
+                    <br><span>(Programador Junior)</span>
+                    <br><a href="https://github.com/r0b3rt023" target="_blank"><button><ion-icon name="logo-github"></ion-icon>GitHub</button></a></span>
+                </p>
+            </div>
+            <!-- <div class="prueba">
+                
+            </div> -->
+            
+        </div>
+
+        <div class="apartado hidden" id="perfil">
+            <h1>Perfil</h1>
+            <div class="div-cv">
+                <div class="personal-data">
+                    <div class="info-div">
+                        <img src="./img/fotoPerfil.png" />
                         <h3>Roberto Esteban Sinovas</h3>
-                    </td>
-                    <td class="celdaDescripcion">
-                        <div>
-                            Actualmente soy estudiante de 2º curso de Desarrollo de Aplicaciones
+                        <p>Nacimiento: 23/03/1998</p>
+                    </div>
+
+                    <div class="contact-div">
+                        <h4>CONTACTO</h4>
+                        <p>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            roobeerto23@gmail.com
+                        </p>
+                        <p>
+                            <a href="https://github.com/r0b3rt023" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                https://github.com/r0b3rt023
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="career-data">
+                    <div class="description-data">
+                        <p>Actualmente soy estudiante de 2º curso de Desarrollo de Aplicaciones
                             Multiplataforma, y cuento con experiencia previa en el sector por haber trabajado
                             un año como programador web (Full Stack). Además, me gusta dedicar mi tiempo a
-                            aprender de forma autodidacta nuevos lenguajes.<br>
-                            Dada mi anterior experiencia laboral y mis estudios, he aprendido a trabajar en
+                            aprender de forma autodidacta nuevos lenguajes.</p>
+
+                        <p>Dada mi anterior experiencia laboral y mis estudios, he aprendido a trabajar en
                             equipo, además de otras capacidades, como resolutividad o adaptación rápida a
                             los cambios. Todo esto me ha ayudado a mejorar mi agilidad al programar, por lo
-                            que considero que podría ser un buen aporte para una empresa del sector.
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td rowspan="2" class="celdaDatos">
+                            que considero que podría ser un buen aporte para una empresa del sector.</p>
+                    </div>
+                    <br>
+                    <div class="experience-data">
+                        <h2>EXPERIENCIA EN EL SECTOR</h2>
                         <ul>
                             <li>
-                                <p>Nacimiento: 23/03/1998</p>
+                                <h3>Practicas Programador Junior</h3>
+                                <p>SERBATIC (03/2022 - Actualidad)</p>
+                                <ul>
+                                    <li>Programación en HTML, CSS y JS
+                                    </li>
+                                </ul>
                             </li>
                             <br>
                             <li>
-                                <h4>CONTACTO</h4>
+                                <h3>Programador Junior</h3>
+                                <p>ATOS Iberia (11/2018 - 11/2019)</p>
                                 <ul>
-                                    <li>
-                                        <ion-icon name="mail-outline"></ion-icon>
-                                        roobeerto23@gmail.com
+                                    <li>Creación de una apliación Spring con Hibernate y PrimeFaces, donde
+                                        se permitía ver, editar, buscar y expotar a excel datos de una BD
+                                        (FullStack)
                                     </li>
-                                   
+                                    <li>Creación de scripts UNIX para automatizar ciertos procesos de
+                                        comprobación previa a instalación de software Middleware</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <h3>Prácticas como Técnico Informatico en el departamento de Soporte</h3>
+                                <p>Acción Laboral (03/2018 - 06/2018)</p>
+                                <ul>
+                                    <li>Preparación/Mantenimiento de equipos informaticos</li>
+                                    <li>Resolución de incidencias</li>
+                                    <li>Instalación de equipos informaticos y configuracion de routers en
+                                        oficinas</li>
                                 </ul>
                             </li>
                         </ul>
-                    </td>
-                    <td style="width: 100%;">
-                        <table class="tablaExperiencia">
-                            <tr>
-                                <td>
-                                    <h2>EXPERIENCIA EN EL SECTOR</h2>
-                                    <ul>
-                                        <li>
-                                            <h3>Programador Junior</h3>
-                                            <p>ATOS Iberia (11/2018 - 11/2019)</p>
-                                            <ul>
-                                                <li>Creación de una apliación Spring con Hibernate y PrimeFaces, donde
-                                                    se permitía ver, editar, buscar y expotar a excel datos de una BD (FullStack)
-                                                </li>
-                                                <li>Creación de scripts UNIX para automatizar ciertos procesos de
-                                                    comprobación previa a instalación de software Middleware</li>
-                                            </ul>
-                                        </li>
-                                        <br>
-                                        <li>
-                                            <h3>Prácticas como Técnico Informatico en el departamento de Soporte</h3>
-                                            <p>Acción Laboral (03/2018 - 06/2018)</p>
-                                            <ul>
-                                                <li>Preparación/Mantenimiento de equipos informaticos</li>
-                                                <li>Resolución de incidencias</li>
-                                                <li>Instalación de equipos informaticos y configuracion de routers en
-                                                    oficinas</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 100%;">
-                        <table class="tablaExperiencia">
-                            <tr>
-                                <td style="width: 100%;">
-                                    <h2>ESTUDIOS</h2>
-                                    <ul>
-                                        <li>
-                                            <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
-                                            <p>CPrFP Gregorio Fernández (09/2020 - Actualidad)</p>
-                                        </li>
-                                        <br>
-                                        <li>
-                                            <h3>Técnico Superior en Administracion de Sistemas Informaticos y Redes</h3>
-                                            <p>IES Galileo (09/2016 - 06/2018)</p>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                    <br>
+                    <div class="experience-data">
+                        <h2>ESTUDIOS</h2>
+                        <ul>
+                            <li>
+                                <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+                                <p>CPrFP Gregorio Fernández (09/2020 - Actualidad)</p>
+                            </li>
+
+                            <li>
+                                <h3>Técnico Superior en Administración de Sistemas Informaticos y Redes</h3>
+                                <p>IES Galileo (09/2016 - 06/2018)</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="apartado hidden" id="contacto">
+            <h1>Contacto</h1>
+            <h3 id="correo-correcto" class="hidden">Correo enviado correctamente</h3>
+            <h3 id="correo-error" class="hidden">Ha habido un problema al mandar el mensaje</h3>
+            <form id="form-contacto" method="POST">
+                <div class="div-contacto">
+                    <div>
+                        <label>Nombre de la persona o compañia <span>(*)</span></label>
+                        <input type="text" id="nombre-contacto" name="nombreContacto" />
+                    </div>
+                    <div>
+                        <label>Apellidos</label>
+                        <input type="text" id="apellidos-contacto" name="apellidosContacto" />
+                    </div>
+                    <div>
+                        <label>Teléfono <span>(*)</span></label>
+                        <input type="number" id="telefono-contacto" name="telefonoContacto" />
+                    </div>
+                    <div>
+                        <label>Email <span>(*)</span></label>
+                        <input type="email" id="email-contacto" name="emailContacto" />
+                    </div>
+                    <div>
+                        <label>Mensaje <span>(*)</span></label>
+                        <textarea id="mensaje-contacto" name="mensajeContacto"></textarea>
+                    </div>
+                    <div>
+                        <span>(*) Los campos son obligatorios</span>
+                        <input type="submit" id="boton-enviar" value="Enviar" />
+                    </div>
+                </div>
+            </form>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('_joNr1CPWbvdIc_lu')
+            </script>
+        </div>
+
+        <div class="apartado hidden" id="github">
+            <h1>GitHub</h1>
+            <div class="div-repos">
+                <div>
+                    <a href="https://github.com/r0b3rt023/Multiply" target="_blank">
+                        <img src="./img/logoMultply.png" />
+                    </a>
+                    <h2>MULTIPLY</h2>
+                    <p>Un pequeño juego sobre multiplicaciones, orientado a niños o personas mayores, el cual les
+                        ayuda a mejorar la agilidad mental y también el manejo con los ordenadores.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/r0b3rt023/SCCyL" target="_blank">
+                        <img src="./img/logoSCCyL.png" />
+                    </a>
+                    <h2>SCCyL</h2>
+                    <p>Una página desarrollada en Spring junto con PrimeFaces donde se muestran datos sobre la
+                        COVID-19
+                    </p>
+                </div>
+                <div>
+                    <a href="https://github.com/r0b3rt023/CALCULADORA" target="_blank">
+                        <img src="./img/logoCalculadora.svg" id="img-calculadora"/>
+                    </a>
+                    <h2>Calculadora JS</h2>
+                    <p>Calculadora realizada en JS para empezar a entender el lenguaje</p>
+                </div>
+                <div>
+                    <a href="https://github.com/r0b3rt023/CalcularTonalidadPartitura" target="_blank">
+                        <img src="./img/logoUnkwon.png" />
+                    </a>
+                    <h2>Calcular Tonalidad Partitura</h2>
+                    <p>(En desarrollo)</p>
+                    <p>Aplicación Android que permite calcular la tonalidad de una partitura</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="apartado ocultado" id="github">
-        <div class="contenidoApartado">
-            <table class="tablaGitHub">
-                <tr>
-                    <td colspan="2" style="align-content: center;vertical-align: middle;
-                    text-align: center;">
-                        <h1 style="color: azure;">GitHub</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="https://github.com/r0b3rt023/Multiply">
-                            <img src="logoMultply.png" width="25%"/>
-                        </a>
-                        <h2>MULTIPLY</h2>
-                        <p>Un pequeño juego sobre multiplicaciones, orientado a niños o personas mayores, el cual les ayuda a mejorar la agilidad mental y también el manejo con los ordenadores.</p>
-                    </td>
-                    <td>
-                        <a href="https://github.com/r0b3rt023/SCCyL">
-                            <img src="logoSCCyL.png" width="25%"/>
-                        </a>
-                        <h2>SCCyL</h2>
-                        <p>Una pagina desarrollada en Spring con PrimeFaces donde se muestran datos sobre la COVID-19</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <a href="https://github.com/r0b3rt023/CalcularTonalidadPartitura">
-                            <img src="logoUnkwon.png" width="15%"/>
-                        </a>
-                        <h2>Calcular Tonalidad Partitura</h2>
-                        <p>(En desarrollo)</p>
-                        <p>Aplicación Android que permite calcular la tonalidad de una partitura</p>
-                    </td>
-                </tr>
-            </table>
-    </div>
-    
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink() {
-            ocultarDivs();
-            list.forEach((item) =>
-                item.classList.remove('active'));
-            this.classList.add('active');
-
-            this.classList.forEach((nombreClase) => {
-                if (nombreClase == "home") {
-                    var home = document.getElementById("home");
-                    home.classList.remove("ocultado");
-                } else if (nombreClase == "perfil") {
-                    var home = document.getElementById("perfil");
-                    home.classList.remove("ocultado");
-                } else if (nombreClase == "github") {
-                    var home = document.getElementById("github");
-                    home.classList.remove("ocultado");
-                }
-            });
-        }
-        function ocultarDivs() {
-            var home = document.getElementById("home");
-            home.classList.add("ocultado");
-            var perfil = document.getElementById("perfil");
-            perfil.classList.add("ocultado");
-            var github = document.getElementById("github");
-            github.classList.add("ocultado");
-        }
-
-        list.forEach((item) =>
-            item.addEventListener('click', activeLink));
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

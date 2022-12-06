@@ -1,0 +1,71 @@
+#home {
+    height: 100%;
+    flex-direction: row;
+}
+
+/* .prueba {
+    background-color: var(--icons-color);
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/bg-roberto.jpg");
+    background-size: cover;
+    opacity: 0.6;
+} */
+
+.home-data {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    text-align-last: center;
+    /* width: 50%;
+    height: 100%; */
+    /* box-shadow: 40px 0 5px -2px black; */
+}
+
+.home-data p {
+    font-size: 3.8em;
+    font-variant: small-caps;
+}
+
+.home-data p > span{
+    font-size: 0.6em;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.home-data p button {
+    font-size: .8em;
+    font-variant: small-caps;
+    background-color: var(--icons-color);
+    border: none;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px; 
+}
+
+
+.home-data p button:hover {
+    background-color: var(--scrollbar-hover);
+}
+
+.home-data a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .home-data p {
+        font-size: 2.5em;
+    }
+}

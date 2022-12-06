@@ -1,0 +1,102 @@
+.div-contacto {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    text-align-last: center;
+    row-gap: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.div-contacto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.div-contacto label {
+    font-size: 1.5em;
+    font-variant: small-caps;
+}
+
+.div-contacto input {    
+    height: 40px;
+}
+
+.div-contacto textarea {
+    height: 100px;
+    resize: none;
+    padding: 5px;
+    text-align: justify;
+}
+
+.div-contacto input, textarea {
+    width: 700px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 3px;
+}
+
+.div-contacto  span {
+    font-size: .8em;
+}
+
+.div-contacto div:last-child > input {
+    height: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-variant: small-caps;
+    background-color: var(--icons-color);
+    cursor: pointer;
+}
+
+#telefono-contacto::-webkit-outer-spin-button,
+#telefono-contacto::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#telefono-contacto[type=number] {
+    -moz-appearance: textfield;
+}
+
+.div-contacto input:focus, textarea:focus {
+    outline: 3px solid var(--icons-color);
+}
+
+.fields-empty {
+    outline: #E62828 3px solid;
+}
+
+#correo-correcto, #correo-error {
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#correo-correcto {
+    color: #78D868;
+}
+
+#correo-error {
+    color: #E62828
+}
+
+@media screen and (max-width: 800px) {
+    .div-contacto input, textarea {
+        width: 500px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .div-contacto input, textarea {
+        width: 95%;
+    }
+    
+    .div-contacto label {
+        text-align: center;
+    }
+}
